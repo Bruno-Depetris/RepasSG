@@ -133,6 +133,7 @@
             this.materialButton_CargarNuevo.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton_CargarNuevo.UseAccentColor = false;
             this.materialButton_CargarNuevo.UseVisualStyleBackColor = true;
+            this.materialButton_CargarNuevo.Click += new System.EventHandler(this.materialButton_CargarNuevo_Click);
             // 
             // materialButton1
             // 

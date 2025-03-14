@@ -14,10 +14,6 @@ namespace RepasSG.Formularios.Listado {
             InitializeComponent();
         }
 
-        private void airForm1_Click(object sender, EventArgs e) {
-
-        }
-
         private void hopeButton_Cargar_Enter(object sender, EventArgs e) {
 
         }

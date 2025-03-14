@@ -47,6 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexiones\Clases\Logica\LogicaApertura.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaCliente.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaFormaPago.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaMenu.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaPedido.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaReptartidor.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaSeccion.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaSuscripcion.cs" />
+    <Compile Include="Conexiones\Clases\Logica\LogicaTipoPago.cs" />
+    <Compile Include="Conexiones\Clases\Modelo.cs" />
+    <Compile Include="Conexiones\BD\Conexion.cs" />
     <Compile Include="Formularios\Listado\CargarNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,8 +120,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Clases\" />
-    <Folder Include="Conexiones\" />
     <Folder Include="Formularios\Clientes\" />
     <Folder Include="Formularios\Config\" />
     <Folder Include="Formularios\Control\" />
