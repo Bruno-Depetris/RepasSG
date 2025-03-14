@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RepasSG {
-    public partial class FormPrincipal : Form {
-        public FormPrincipal() {
+namespace RepasSG.Formularios {
+    public partial class Listado : Form {
+        public Listado() {
             InitializeComponent();
         }
     }
