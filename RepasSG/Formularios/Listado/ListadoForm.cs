@@ -9,17 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RepasSG.Formularios.Listado {
-    public partial class CargarNuevo : Form {
-        public CargarNuevo() {
+    public partial class ListadoForm : Form {
+        public ListadoForm() {
             InitializeComponent();
-        }
-
-        private void hopeButton_Cargar_Enter(object sender, EventArgs e) {
-
-        }
-
-        private void hopeButton_Cargar_Click(object sender, EventArgs e) {
-
         }
     }
 }

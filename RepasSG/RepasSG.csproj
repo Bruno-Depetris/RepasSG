@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,11 +59,23 @@
     <Compile Include="Conexiones\Clases\Logica\LogicaTipoPago.cs" />
     <Compile Include="Conexiones\Clases\Modelo.cs" />
     <Compile Include="Conexiones\BD\Conexion.cs" />
-    <Compile Include="Formularios\Listado\CargarNuevo.cs">
+    <Compile Include="Formularios\Clientes\ClientesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Listado\CargarNuevo.Designer.cs">
-      <DependentUpon>CargarNuevo.cs</DependentUpon>
+    <Compile Include="Formularios\Clientes\ClientesForm.Designer.cs">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes\NuevaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\NuevaCompra.Designer.cs">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listado\ListadoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listado\ListadoForm.Designer.cs">
+      <DependentUpon>ListadoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Principal\FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -70,28 +83,20 @@
     <Compile Include="Formularios\Principal\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Listado\Listado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Listado\Listado.Designer.cs">
-      <DependentUpon>Listado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Imagenes\Control.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Imagenes\Control.cs" />
     <Compile Include="Imagenes\Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Listado\CargarNuevo.resx">
-      <DependentUpon>CargarNuevo.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Clientes\NuevaCompra.resx">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listado\ListadoForm.resx">
+      <DependentUpon>ListadoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Listado\Listado.resx">
-      <DependentUpon>Listado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagenes\Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
@@ -120,9 +125,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formularios\Clientes\" />
     <Folder Include="Formularios\Config\" />
-    <Folder Include="Formularios\Control\" />
     <Folder Include="Formularios\Movimientos\" />
     <Folder Include="Logos\" />
   </ItemGroup>

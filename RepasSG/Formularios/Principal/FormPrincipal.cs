@@ -1,4 +1,6 @@
 ﻿using RepasSG.Formularios;
+using RepasSG.Formularios.Clientes;
+using RepasSG.Formularios.Listado;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,9 +40,11 @@ namespace RepasSG {
             bigLabel_Dia.Text = char.ToUpper(fechaActual.ToString("dddd")[0]) + fechaActual.ToString("dddd").Substring(1);
         }
         private void parrotButton_Listado_Click(object sender, EventArgs e) {
-            AbrirFormNuevo(new Listado());
+            AbrirFormNuevo(new ListadoForm());
         }
 
-
+        private void parrotButton_Control_Click(object sender, EventArgs e) {
+            AbrirFormNuevo(new NuevaCompra());
+        }
     }
 }

@@ -282,7 +282,7 @@
             this.parrotButton_Control.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.parrotButton_Control.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Control.ButtonImage")));
             this.parrotButton_Control.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.parrotButton_Control.ButtonText = "CONTROL";
+            this.parrotButton_Control.ButtonText = "VENDER";
             this.parrotButton_Control.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.parrotButton_Control.ClickTextColor = System.Drawing.Color.White;
             this.parrotButton_Control.CornerRadius = 5;
@@ -300,6 +300,7 @@
             this.parrotButton_Control.TextColor = System.Drawing.Color.White;
             this.parrotButton_Control.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotButton_Control.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Control.Click += new System.EventHandler(this.parrotButton_Control_Click);
             // 
             // nightControlBox1
             // 

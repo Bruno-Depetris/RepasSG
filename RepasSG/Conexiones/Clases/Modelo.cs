@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,7 +44,7 @@ namespace RepasSG.Clases {
             public FormaPago FormaPago { get; set; }
         }
 
-        public class Cliente {  //listo
+        public class Cliente {  
             public int ClienteID { get; set; }
             public string Nombre { get; set; }
             public string Direccion { get; set; }
@@ -52,6 +53,7 @@ namespace RepasSG.Clases {
         public class Seccion {
             public int SeccionID { get; set; }
             public string Nombre { get; set; }
+            public Image Image { get; set; }
         }
 
         public class Menu {

@@ -8,3 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+namespace RepasSG.Formularios.Clientes {
+    public partial class ClientesForm : Form {
+        public ClientesForm() {
+            InitializeComponent();
+        }
+    }
+}
