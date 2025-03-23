@@ -59,16 +59,52 @@
     <Compile Include="Conexiones\Clases\Logica\LogicaTipoPago.cs" />
     <Compile Include="Conexiones\Clases\Modelo.cs" />
     <Compile Include="Conexiones\BD\Conexion.cs" />
-    <Compile Include="Formularios\Clientes\ClientesForm.cs">
+    <Compile Include="Formularios\Config\AgregarComida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Clientes\ClientesForm.Designer.cs">
+    <Compile Include="Formularios\Config\AgregarComida.Designer.cs">
+      <DependentUpon>AgregarComida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Config\AgregarSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Config\AgregarSeccion.Designer.cs">
+      <DependentUpon>AgregarSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Config\ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Config\ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Notificacion\Mensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Notificacion\Mensaje.Designer.cs">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principal\Repas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal\Repas.Designer.cs">
+      <DependentUpon>Repas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Vender\ClientesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Vender\ClientesForm.Designer.cs">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Clientes\NuevaCompra.cs">
+    <Compile Include="Formularios\Vender\FormaPagoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Clientes\NuevaCompra.Designer.cs">
+    <Compile Include="Formularios\Vender\FormaPagoForm.Designer.cs">
+      <DependentUpon>FormaPagoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Vender\NuevaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Vender\NuevaCompra.Designer.cs">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Listado\ListadoForm.cs">
@@ -77,26 +113,35 @@
     <Compile Include="Formularios\Listado\ListadoForm.Designer.cs">
       <DependentUpon>ListadoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Principal\FormPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Principal\FormPrincipal.Designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Imagenes\Control.cs" />
     <Compile Include="Imagenes\Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Clientes\NuevaCompra.resx">
+    <EmbeddedResource Include="Formularios\Config\AgregarComida.resx">
+      <DependentUpon>AgregarComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Config\AgregarSeccion.resx">
+      <DependentUpon>AgregarSeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Config\ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Notificacion\Mensaje.resx">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal\Repas.resx">
+      <DependentUpon>Repas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Vender\FormaPagoForm.resx">
+      <DependentUpon>FormaPagoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Vender\NuevaCompra.resx">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Listado\ListadoForm.resx">
       <DependentUpon>ListadoForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Principal\FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagenes\Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
@@ -125,7 +170,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formularios\Config\" />
     <Folder Include="Formularios\Movimientos\" />
     <Folder Include="Logos\" />
   </ItemGroup>

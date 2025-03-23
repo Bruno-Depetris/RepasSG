@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RepasSG.Formularios.Principal;
+using RepasSG.Formularios.Vender;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,7 +15,7 @@ namespace RepasSG {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+            Application.Run(new Repas());
         }
     }
 }
