@@ -25,7 +25,20 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarSus));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.parrotButton_Cargar = new ReaLTaiizor.Controls.ParrotButton();
+            this.hopeComboBox_FormaPago = new ReaLTaiizor.Controls.HopeComboBox();
+            this.hopeComboBox_TipoPago = new ReaLTaiizor.Controls.HopeComboBox();
+            this.panel_envio = new System.Windows.Forms.Panel();
+            this.hopeCheckBox_EvioSabado = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_EvioMiercoles = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeTextBox_Horario = new ReaLTaiizor.Controls.HopeTextBox();
+            this.hopeTextBox_PrecioEnvio = new ReaLTaiizor.Controls.HopeTextBox();
+            this.hopeCheckBox_EvioViernes = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_EvioJueves = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_EvioMartes = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_EvioLunes = new ReaLTaiizor.Controls.HopeCheckBox();
             this.hopeComboBox_Repartidor = new ReaLTaiizor.Controls.HopeComboBox();
+            this.hopeComboBox_EsEnvio = new ReaLTaiizor.Controls.HopeComboBox();
             this.airSeparator1 = new ReaLTaiizor.Controls.AirSeparator();
             this.nightLabel_NoCome = new ReaLTaiizor.Controls.NightLabel();
             this.parrotButton_Agregar = new ReaLTaiizor.Controls.ParrotButton();
@@ -33,38 +46,31 @@
             this.hopeTextBox_Detalles = new ReaLTaiizor.Controls.HopeTextBox();
             this.hopeComboBox_Menu = new ReaLTaiizor.Controls.HopeComboBox();
             this.parrotButton_Buscar = new ReaLTaiizor.Controls.ParrotButton();
-            this.hopeCheckBox6 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox5 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox4 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox3 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox2 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox1 = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_VaSabado = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_VaViernes = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_VaJueves = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_VaMiercoles = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_VaMartes = new ReaLTaiizor.Controls.HopeCheckBox();
+            this.hopeCheckBox_VaLunes = new ReaLTaiizor.Controls.HopeCheckBox();
             this.hopeTextBox_Telefono = new ReaLTaiizor.Controls.HopeTextBox();
             this.hopeTextBox_Direccion = new ReaLTaiizor.Controls.HopeTextBox();
             this.hopeTextBox_Nombre = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeCheckBox7 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox8 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox9 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox10 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox11 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeCheckBox12 = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.hopeComboBox_EsEnvio = new ReaLTaiizor.Controls.HopeComboBox();
-            this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.airForm1.SuspendLayout();
+            this.panel_envio.SuspendLayout();
             this.SuspendLayout();
             // 
             // airForm1
             // 
-            this.airForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.airForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.airForm1.Controls.Add(this.nightLabel1);
-            this.airForm1.Controls.Add(this.hopeCheckBox7);
-            this.airForm1.Controls.Add(this.hopeCheckBox8);
-            this.airForm1.Controls.Add(this.hopeCheckBox9);
-            this.airForm1.Controls.Add(this.hopeCheckBox10);
-            this.airForm1.Controls.Add(this.hopeCheckBox11);
-            this.airForm1.Controls.Add(this.hopeCheckBox12);
-            this.airForm1.Controls.Add(this.hopeComboBox_Repartidor);
+            this.airForm1.Controls.Add(this.panel2);
+            this.airForm1.Controls.Add(this.panel1);
+            this.airForm1.Controls.Add(this.parrotButton_Cargar);
+            this.airForm1.Controls.Add(this.hopeComboBox_FormaPago);
+            this.airForm1.Controls.Add(this.hopeComboBox_TipoPago);
+            this.airForm1.Controls.Add(this.panel_envio);
             this.airForm1.Controls.Add(this.hopeComboBox_EsEnvio);
             this.airForm1.Controls.Add(this.airSeparator1);
             this.airForm1.Controls.Add(this.nightLabel_NoCome);
@@ -73,12 +79,12 @@
             this.airForm1.Controls.Add(this.hopeTextBox_Detalles);
             this.airForm1.Controls.Add(this.hopeComboBox_Menu);
             this.airForm1.Controls.Add(this.parrotButton_Buscar);
-            this.airForm1.Controls.Add(this.hopeCheckBox6);
-            this.airForm1.Controls.Add(this.hopeCheckBox5);
-            this.airForm1.Controls.Add(this.hopeCheckBox4);
-            this.airForm1.Controls.Add(this.hopeCheckBox3);
-            this.airForm1.Controls.Add(this.hopeCheckBox2);
-            this.airForm1.Controls.Add(this.hopeCheckBox1);
+            this.airForm1.Controls.Add(this.hopeCheckBox_VaSabado);
+            this.airForm1.Controls.Add(this.hopeCheckBox_VaViernes);
+            this.airForm1.Controls.Add(this.hopeCheckBox_VaJueves);
+            this.airForm1.Controls.Add(this.hopeCheckBox_VaMiercoles);
+            this.airForm1.Controls.Add(this.hopeCheckBox_VaMartes);
+            this.airForm1.Controls.Add(this.hopeCheckBox_VaLunes);
             this.airForm1.Controls.Add(this.hopeTextBox_Telefono);
             this.airForm1.Controls.Add(this.hopeTextBox_Direccion);
             this.airForm1.Controls.Add(this.hopeTextBox_Nombre);
@@ -99,6 +105,249 @@
             this.airForm1.Text = "Suscripcion";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
+            this.airForm1.Click += new System.EventHandler(this.airForm1_Click);
+            // 
+            // parrotButton_Cargar
+            // 
+            this.parrotButton_Cargar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.parrotButton_Cargar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
+            this.parrotButton_Cargar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Cargar.ButtonImage")));
+            this.parrotButton_Cargar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.parrotButton_Cargar.ButtonText = "CARGAR";
+            this.parrotButton_Cargar.ClickBackColor = System.Drawing.Color.Black;
+            this.parrotButton_Cargar.ClickTextColor = System.Drawing.Color.Black;
+            this.parrotButton_Cargar.CornerRadius = 5;
+            this.parrotButton_Cargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Cargar.Font = new System.Drawing.Font("Arboria Book", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton_Cargar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Cargar.HoverBackgroundColor = System.Drawing.Color.Black;
+            this.parrotButton_Cargar.HoverTextColor = System.Drawing.Color.White;
+            this.parrotButton_Cargar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Cargar.Location = new System.Drawing.Point(445, 328);
+            this.parrotButton_Cargar.Name = "parrotButton_Cargar";
+            this.parrotButton_Cargar.Size = new System.Drawing.Size(190, 39);
+            this.parrotButton_Cargar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Cargar.TabIndex = 47;
+            this.parrotButton_Cargar.TextColor = System.Drawing.Color.Black;
+            this.parrotButton_Cargar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton_Cargar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // hopeComboBox_FormaPago
+            // 
+            this.hopeComboBox_FormaPago.BackColor = System.Drawing.Color.White;
+            this.hopeComboBox_FormaPago.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeComboBox_FormaPago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hopeComboBox_FormaPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hopeComboBox_FormaPago.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeComboBox_FormaPago.FormattingEnabled = true;
+            this.hopeComboBox_FormaPago.ItemHeight = 30;
+            this.hopeComboBox_FormaPago.Location = new System.Drawing.Point(290, 286);
+            this.hopeComboBox_FormaPago.Name = "hopeComboBox_FormaPago";
+            this.hopeComboBox_FormaPago.Size = new System.Drawing.Size(498, 36);
+            this.hopeComboBox_FormaPago.TabIndex = 46;
+            // 
+            // hopeComboBox_TipoPago
+            // 
+            this.hopeComboBox_TipoPago.BackColor = System.Drawing.Color.White;
+            this.hopeComboBox_TipoPago.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeComboBox_TipoPago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hopeComboBox_TipoPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hopeComboBox_TipoPago.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeComboBox_TipoPago.FormattingEnabled = true;
+            this.hopeComboBox_TipoPago.ItemHeight = 30;
+            this.hopeComboBox_TipoPago.Location = new System.Drawing.Point(290, 243);
+            this.hopeComboBox_TipoPago.Name = "hopeComboBox_TipoPago";
+            this.hopeComboBox_TipoPago.Size = new System.Drawing.Size(498, 36);
+            this.hopeComboBox_TipoPago.TabIndex = 45;
+            // 
+            // panel_envio
+            // 
+            this.panel_envio.Controls.Add(this.hopeCheckBox_EvioSabado);
+            this.panel_envio.Controls.Add(this.hopeCheckBox_EvioMiercoles);
+            this.panel_envio.Controls.Add(this.hopeTextBox_Horario);
+            this.panel_envio.Controls.Add(this.hopeTextBox_PrecioEnvio);
+            this.panel_envio.Controls.Add(this.hopeCheckBox_EvioViernes);
+            this.panel_envio.Controls.Add(this.hopeCheckBox_EvioJueves);
+            this.panel_envio.Controls.Add(this.hopeCheckBox_EvioMartes);
+            this.panel_envio.Controls.Add(this.hopeCheckBox_EvioLunes);
+            this.panel_envio.Controls.Add(this.hopeComboBox_Repartidor);
+            this.panel_envio.Location = new System.Drawing.Point(2, 280);
+            this.panel_envio.Name = "panel_envio";
+            this.panel_envio.Size = new System.Drawing.Size(280, 170);
+            this.panel_envio.TabIndex = 44;
+            // 
+            // hopeCheckBox_EvioSabado
+            // 
+            this.hopeCheckBox_EvioSabado.AutoSize = true;
+            this.hopeCheckBox_EvioSabado.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioSabado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_EvioSabado.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_EvioSabado.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_EvioSabado.Enable = true;
+            this.hopeCheckBox_EvioSabado.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioSabado.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_EvioSabado.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_EvioSabado.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_EvioSabado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_EvioSabado.Location = new System.Drawing.Point(181, 141);
+            this.hopeCheckBox_EvioSabado.Name = "hopeCheckBox_EvioSabado";
+            this.hopeCheckBox_EvioSabado.Size = new System.Drawing.Size(87, 20);
+            this.hopeCheckBox_EvioSabado.TabIndex = 45;
+            this.hopeCheckBox_EvioSabado.Text = "Sabado";
+            this.hopeCheckBox_EvioSabado.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_EvioSabado.CheckedChanged += new System.EventHandler(this.hopeCheckBox_EvioSabado_CheckedChanged);
+            // 
+            // hopeCheckBox_EvioMiercoles
+            // 
+            this.hopeCheckBox_EvioMiercoles.AutoSize = true;
+            this.hopeCheckBox_EvioMiercoles.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioMiercoles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_EvioMiercoles.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_EvioMiercoles.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_EvioMiercoles.Enable = true;
+            this.hopeCheckBox_EvioMiercoles.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioMiercoles.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_EvioMiercoles.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_EvioMiercoles.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_EvioMiercoles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_EvioMiercoles.Location = new System.Drawing.Point(8, 141);
+            this.hopeCheckBox_EvioMiercoles.Name = "hopeCheckBox_EvioMiercoles";
+            this.hopeCheckBox_EvioMiercoles.Size = new System.Drawing.Size(102, 20);
+            this.hopeCheckBox_EvioMiercoles.TabIndex = 44;
+            this.hopeCheckBox_EvioMiercoles.Text = "Miercoles";
+            this.hopeCheckBox_EvioMiercoles.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_EvioMiercoles.CheckedChanged += new System.EventHandler(this.hopeCheckBox_EvioMiercoles_CheckedChanged);
+            // 
+            // hopeTextBox_Horario
+            // 
+            this.hopeTextBox_Horario.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox_Horario.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.hopeTextBox_Horario.BorderColorA = System.Drawing.Color.White;
+            this.hopeTextBox_Horario.BorderColorB = System.Drawing.Color.White;
+            this.hopeTextBox_Horario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hopeTextBox_Horario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeTextBox_Horario.Hint = "Horario ";
+            this.hopeTextBox_Horario.Location = new System.Drawing.Point(10, 47);
+            this.hopeTextBox_Horario.MaxLength = 32767;
+            this.hopeTextBox_Horario.Multiline = false;
+            this.hopeTextBox_Horario.Name = "hopeTextBox_Horario";
+            this.hopeTextBox_Horario.PasswordChar = '\0';
+            this.hopeTextBox_Horario.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBox_Horario.SelectedText = "";
+            this.hopeTextBox_Horario.SelectionLength = 0;
+            this.hopeTextBox_Horario.SelectionStart = 0;
+            this.hopeTextBox_Horario.Size = new System.Drawing.Size(261, 36);
+            this.hopeTextBox_Horario.TabIndex = 43;
+            this.hopeTextBox_Horario.TabStop = false;
+            this.hopeTextBox_Horario.UseSystemPasswordChar = false;
+            // 
+            // hopeTextBox_PrecioEnvio
+            // 
+            this.hopeTextBox_PrecioEnvio.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox_PrecioEnvio.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.hopeTextBox_PrecioEnvio.BorderColorA = System.Drawing.Color.White;
+            this.hopeTextBox_PrecioEnvio.BorderColorB = System.Drawing.Color.White;
+            this.hopeTextBox_PrecioEnvio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hopeTextBox_PrecioEnvio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeTextBox_PrecioEnvio.Hint = "Precio Envio";
+            this.hopeTextBox_PrecioEnvio.Location = new System.Drawing.Point(10, 5);
+            this.hopeTextBox_PrecioEnvio.MaxLength = 32767;
+            this.hopeTextBox_PrecioEnvio.Multiline = false;
+            this.hopeTextBox_PrecioEnvio.Name = "hopeTextBox_PrecioEnvio";
+            this.hopeTextBox_PrecioEnvio.PasswordChar = '\0';
+            this.hopeTextBox_PrecioEnvio.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBox_PrecioEnvio.SelectedText = "";
+            this.hopeTextBox_PrecioEnvio.SelectionLength = 0;
+            this.hopeTextBox_PrecioEnvio.SelectionStart = 0;
+            this.hopeTextBox_PrecioEnvio.Size = new System.Drawing.Size(125, 36);
+            this.hopeTextBox_PrecioEnvio.TabIndex = 42;
+            this.hopeTextBox_PrecioEnvio.TabStop = false;
+            this.hopeTextBox_PrecioEnvio.UseSystemPasswordChar = false;
+            // 
+            // hopeCheckBox_EvioViernes
+            // 
+            this.hopeCheckBox_EvioViernes.AutoSize = true;
+            this.hopeCheckBox_EvioViernes.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioViernes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_EvioViernes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_EvioViernes.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_EvioViernes.Enable = true;
+            this.hopeCheckBox_EvioViernes.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioViernes.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_EvioViernes.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_EvioViernes.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_EvioViernes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_EvioViernes.Location = new System.Drawing.Point(181, 115);
+            this.hopeCheckBox_EvioViernes.Name = "hopeCheckBox_EvioViernes";
+            this.hopeCheckBox_EvioViernes.Size = new System.Drawing.Size(87, 20);
+            this.hopeCheckBox_EvioViernes.TabIndex = 39;
+            this.hopeCheckBox_EvioViernes.Text = "Viernes";
+            this.hopeCheckBox_EvioViernes.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_EvioViernes.CheckedChanged += new System.EventHandler(this.hopeCheckBox_EvioViernes_CheckedChanged);
+            // 
+            // hopeCheckBox_EvioJueves
+            // 
+            this.hopeCheckBox_EvioJueves.AutoSize = true;
+            this.hopeCheckBox_EvioJueves.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioJueves.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_EvioJueves.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_EvioJueves.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_EvioJueves.Enable = true;
+            this.hopeCheckBox_EvioJueves.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioJueves.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_EvioJueves.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_EvioJueves.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_EvioJueves.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_EvioJueves.Location = new System.Drawing.Point(181, 89);
+            this.hopeCheckBox_EvioJueves.Name = "hopeCheckBox_EvioJueves";
+            this.hopeCheckBox_EvioJueves.Size = new System.Drawing.Size(81, 20);
+            this.hopeCheckBox_EvioJueves.TabIndex = 38;
+            this.hopeCheckBox_EvioJueves.Text = "Jueves";
+            this.hopeCheckBox_EvioJueves.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_EvioJueves.CheckedChanged += new System.EventHandler(this.hopeCheckBox_EvioJueves_CheckedChanged);
+            // 
+            // hopeCheckBox_EvioMartes
+            // 
+            this.hopeCheckBox_EvioMartes.AutoSize = true;
+            this.hopeCheckBox_EvioMartes.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioMartes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_EvioMartes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_EvioMartes.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_EvioMartes.Enable = true;
+            this.hopeCheckBox_EvioMartes.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioMartes.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_EvioMartes.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_EvioMartes.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_EvioMartes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_EvioMartes.Location = new System.Drawing.Point(8, 115);
+            this.hopeCheckBox_EvioMartes.Name = "hopeCheckBox_EvioMartes";
+            this.hopeCheckBox_EvioMartes.Size = new System.Drawing.Size(83, 20);
+            this.hopeCheckBox_EvioMartes.TabIndex = 36;
+            this.hopeCheckBox_EvioMartes.Text = "Martes";
+            this.hopeCheckBox_EvioMartes.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_EvioMartes.CheckedChanged += new System.EventHandler(this.hopeCheckBox_EvioMartes_CheckedChanged);
+            // 
+            // hopeCheckBox_EvioLunes
+            // 
+            this.hopeCheckBox_EvioLunes.AutoSize = true;
+            this.hopeCheckBox_EvioLunes.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioLunes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_EvioLunes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_EvioLunes.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_EvioLunes.Enable = true;
+            this.hopeCheckBox_EvioLunes.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_EvioLunes.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_EvioLunes.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_EvioLunes.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_EvioLunes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_EvioLunes.Location = new System.Drawing.Point(8, 89);
+            this.hopeCheckBox_EvioLunes.Name = "hopeCheckBox_EvioLunes";
+            this.hopeCheckBox_EvioLunes.Size = new System.Drawing.Size(76, 20);
+            this.hopeCheckBox_EvioLunes.TabIndex = 35;
+            this.hopeCheckBox_EvioLunes.Text = "Lunes";
+            this.hopeCheckBox_EvioLunes.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_EvioLunes.CheckedChanged += new System.EventHandler(this.hopeCheckBox_EvioLunes_CheckedChanged);
             // 
             // hopeComboBox_Repartidor
             // 
@@ -109,10 +358,25 @@
             this.hopeComboBox_Repartidor.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeComboBox_Repartidor.FormattingEnabled = true;
             this.hopeComboBox_Repartidor.ItemHeight = 30;
-            this.hopeComboBox_Repartidor.Location = new System.Drawing.Point(120, 265);
+            this.hopeComboBox_Repartidor.Location = new System.Drawing.Point(141, 6);
             this.hopeComboBox_Repartidor.Name = "hopeComboBox_Repartidor";
-            this.hopeComboBox_Repartidor.Size = new System.Drawing.Size(261, 36);
+            this.hopeComboBox_Repartidor.Size = new System.Drawing.Size(130, 36);
             this.hopeComboBox_Repartidor.TabIndex = 34;
+            // 
+            // hopeComboBox_EsEnvio
+            // 
+            this.hopeComboBox_EsEnvio.BackColor = System.Drawing.Color.White;
+            this.hopeComboBox_EsEnvio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeComboBox_EsEnvio.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hopeComboBox_EsEnvio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hopeComboBox_EsEnvio.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeComboBox_EsEnvio.FormattingEnabled = true;
+            this.hopeComboBox_EsEnvio.ItemHeight = 30;
+            this.hopeComboBox_EsEnvio.Location = new System.Drawing.Point(12, 243);
+            this.hopeComboBox_EsEnvio.Name = "hopeComboBox_EsEnvio";
+            this.hopeComboBox_EsEnvio.Size = new System.Drawing.Size(261, 36);
+            this.hopeComboBox_EsEnvio.TabIndex = 33;
+            this.hopeComboBox_EsEnvio.SelectedIndexChanged += new System.EventHandler(this.hopeComboBox_EsEnvio_SelectedIndexChanged);
             // 
             // airSeparator1
             // 
@@ -136,7 +400,7 @@
             this.nightLabel_NoCome.BackColor = System.Drawing.Color.Transparent;
             this.nightLabel_NoCome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nightLabel_NoCome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel_NoCome.Location = new System.Drawing.Point(536, 186);
+            this.nightLabel_NoCome.Location = new System.Drawing.Point(477, 182);
             this.nightLabel_NoCome.Name = "nightLabel_NoCome";
             this.nightLabel_NoCome.Size = new System.Drawing.Size(68, 15);
             this.nightLabel_NoCome.TabIndex = 31;
@@ -144,20 +408,20 @@
             // 
             // parrotButton_Agregar
             // 
-            this.parrotButton_Agregar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Agregar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.parrotButton_Agregar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Agregar.ButtonImage")));
             this.parrotButton_Agregar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
             this.parrotButton_Agregar.ButtonText = "";
-            this.parrotButton_Agregar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Agregar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.parrotButton_Agregar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.parrotButton_Agregar.CornerRadius = 5;
             this.parrotButton_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.parrotButton_Agregar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parrotButton_Agregar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.parrotButton_Agregar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Agregar.Horizontal_Alignment = System.Drawing.StringAlignment.Far;
+            this.parrotButton_Agregar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.parrotButton_Agregar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
             this.parrotButton_Agregar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.parrotButton_Agregar.Location = new System.Drawing.Point(490, 172);
+            this.parrotButton_Agregar.Location = new System.Drawing.Point(431, 172);
             this.parrotButton_Agregar.Name = "parrotButton_Agregar";
             this.parrotButton_Agregar.Size = new System.Drawing.Size(40, 39);
             this.parrotButton_Agregar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -184,7 +448,7 @@
             this.hopeTextBox_NoCome.SelectedText = "";
             this.hopeTextBox_NoCome.SelectionLength = 0;
             this.hopeTextBox_NoCome.SelectionStart = 0;
-            this.hopeTextBox_NoCome.Size = new System.Drawing.Size(233, 36);
+            this.hopeTextBox_NoCome.Size = new System.Drawing.Size(174, 36);
             this.hopeTextBox_NoCome.TabIndex = 29;
             this.hopeTextBox_NoCome.TabStop = false;
             this.hopeTextBox_NoCome.UseSystemPasswordChar = false;
@@ -229,20 +493,20 @@
             // parrotButton_Buscar
             // 
             this.parrotButton_Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.parrotButton_Buscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Buscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.parrotButton_Buscar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Buscar.ButtonImage")));
             this.parrotButton_Buscar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
             this.parrotButton_Buscar.ButtonText = "";
-            this.parrotButton_Buscar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Buscar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.parrotButton_Buscar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.parrotButton_Buscar.CornerRadius = 5;
             this.parrotButton_Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.parrotButton_Buscar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parrotButton_Buscar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.parrotButton_Buscar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Buscar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.parrotButton_Buscar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
             this.parrotButton_Buscar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.parrotButton_Buscar.Location = new System.Drawing.Point(748, 36);
+            this.parrotButton_Buscar.Location = new System.Drawing.Point(729, 33);
             this.parrotButton_Buscar.Name = "parrotButton_Buscar";
             this.parrotButton_Buscar.Size = new System.Drawing.Size(40, 39);
             this.parrotButton_Buscar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -251,125 +515,125 @@
             this.parrotButton_Buscar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.parrotButton_Buscar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // hopeCheckBox6
+            // hopeCheckBox_VaSabado
             // 
-            this.hopeCheckBox6.AutoSize = true;
-            this.hopeCheckBox6.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox6.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox6.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox6.Enable = true;
-            this.hopeCheckBox6.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox6.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox6.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox6.Location = new System.Drawing.Point(12, 208);
-            this.hopeCheckBox6.Name = "hopeCheckBox6";
-            this.hopeCheckBox6.Size = new System.Drawing.Size(87, 20);
-            this.hopeCheckBox6.TabIndex = 14;
-            this.hopeCheckBox6.Text = "Sabado";
-            this.hopeCheckBox6.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_VaSabado.AutoSize = true;
+            this.hopeCheckBox_VaSabado.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaSabado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_VaSabado.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_VaSabado.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_VaSabado.Enable = true;
+            this.hopeCheckBox_VaSabado.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaSabado.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_VaSabado.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_VaSabado.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_VaSabado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_VaSabado.Location = new System.Drawing.Point(12, 210);
+            this.hopeCheckBox_VaSabado.Name = "hopeCheckBox_VaSabado";
+            this.hopeCheckBox_VaSabado.Size = new System.Drawing.Size(87, 20);
+            this.hopeCheckBox_VaSabado.TabIndex = 14;
+            this.hopeCheckBox_VaSabado.Text = "Sabado";
+            this.hopeCheckBox_VaSabado.UseVisualStyleBackColor = true;
             // 
-            // hopeCheckBox5
+            // hopeCheckBox_VaViernes
             // 
-            this.hopeCheckBox5.AutoSize = true;
-            this.hopeCheckBox5.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox5.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox5.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox5.Enable = true;
-            this.hopeCheckBox5.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox5.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox5.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox5.Location = new System.Drawing.Point(12, 182);
-            this.hopeCheckBox5.Name = "hopeCheckBox5";
-            this.hopeCheckBox5.Size = new System.Drawing.Size(87, 20);
-            this.hopeCheckBox5.TabIndex = 13;
-            this.hopeCheckBox5.Text = "Viernes";
-            this.hopeCheckBox5.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_VaViernes.AutoSize = true;
+            this.hopeCheckBox_VaViernes.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaViernes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_VaViernes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_VaViernes.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_VaViernes.Enable = true;
+            this.hopeCheckBox_VaViernes.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaViernes.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_VaViernes.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_VaViernes.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_VaViernes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_VaViernes.Location = new System.Drawing.Point(12, 182);
+            this.hopeCheckBox_VaViernes.Name = "hopeCheckBox_VaViernes";
+            this.hopeCheckBox_VaViernes.Size = new System.Drawing.Size(87, 20);
+            this.hopeCheckBox_VaViernes.TabIndex = 13;
+            this.hopeCheckBox_VaViernes.Text = "Viernes";
+            this.hopeCheckBox_VaViernes.UseVisualStyleBackColor = true;
             // 
-            // hopeCheckBox4
+            // hopeCheckBox_VaJueves
             // 
-            this.hopeCheckBox4.AutoSize = true;
-            this.hopeCheckBox4.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox4.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox4.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox4.Enable = true;
-            this.hopeCheckBox4.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox4.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox4.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox4.Location = new System.Drawing.Point(12, 156);
-            this.hopeCheckBox4.Name = "hopeCheckBox4";
-            this.hopeCheckBox4.Size = new System.Drawing.Size(81, 20);
-            this.hopeCheckBox4.TabIndex = 12;
-            this.hopeCheckBox4.Text = "Jueves";
-            this.hopeCheckBox4.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_VaJueves.AutoSize = true;
+            this.hopeCheckBox_VaJueves.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaJueves.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_VaJueves.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_VaJueves.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_VaJueves.Enable = true;
+            this.hopeCheckBox_VaJueves.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaJueves.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_VaJueves.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_VaJueves.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_VaJueves.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_VaJueves.Location = new System.Drawing.Point(12, 156);
+            this.hopeCheckBox_VaJueves.Name = "hopeCheckBox_VaJueves";
+            this.hopeCheckBox_VaJueves.Size = new System.Drawing.Size(81, 20);
+            this.hopeCheckBox_VaJueves.TabIndex = 12;
+            this.hopeCheckBox_VaJueves.Text = "Jueves";
+            this.hopeCheckBox_VaJueves.UseVisualStyleBackColor = true;
             // 
-            // hopeCheckBox3
+            // hopeCheckBox_VaMiercoles
             // 
-            this.hopeCheckBox3.AutoSize = true;
-            this.hopeCheckBox3.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox3.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox3.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox3.Enable = true;
-            this.hopeCheckBox3.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox3.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox3.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox3.Location = new System.Drawing.Point(12, 130);
-            this.hopeCheckBox3.Name = "hopeCheckBox3";
-            this.hopeCheckBox3.Size = new System.Drawing.Size(102, 20);
-            this.hopeCheckBox3.TabIndex = 11;
-            this.hopeCheckBox3.Text = "Miercoles";
-            this.hopeCheckBox3.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_VaMiercoles.AutoSize = true;
+            this.hopeCheckBox_VaMiercoles.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaMiercoles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_VaMiercoles.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_VaMiercoles.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_VaMiercoles.Enable = true;
+            this.hopeCheckBox_VaMiercoles.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaMiercoles.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_VaMiercoles.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_VaMiercoles.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_VaMiercoles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_VaMiercoles.Location = new System.Drawing.Point(12, 130);
+            this.hopeCheckBox_VaMiercoles.Name = "hopeCheckBox_VaMiercoles";
+            this.hopeCheckBox_VaMiercoles.Size = new System.Drawing.Size(102, 20);
+            this.hopeCheckBox_VaMiercoles.TabIndex = 11;
+            this.hopeCheckBox_VaMiercoles.Text = "Miercoles";
+            this.hopeCheckBox_VaMiercoles.UseVisualStyleBackColor = true;
             // 
-            // hopeCheckBox2
+            // hopeCheckBox_VaMartes
             // 
-            this.hopeCheckBox2.AutoSize = true;
-            this.hopeCheckBox2.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox2.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox2.Enable = true;
-            this.hopeCheckBox2.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox2.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox2.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox2.Location = new System.Drawing.Point(12, 104);
-            this.hopeCheckBox2.Name = "hopeCheckBox2";
-            this.hopeCheckBox2.Size = new System.Drawing.Size(83, 20);
-            this.hopeCheckBox2.TabIndex = 10;
-            this.hopeCheckBox2.Text = "Martes";
-            this.hopeCheckBox2.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_VaMartes.AutoSize = true;
+            this.hopeCheckBox_VaMartes.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaMartes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_VaMartes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_VaMartes.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_VaMartes.Enable = true;
+            this.hopeCheckBox_VaMartes.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaMartes.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_VaMartes.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_VaMartes.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_VaMartes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_VaMartes.Location = new System.Drawing.Point(12, 104);
+            this.hopeCheckBox_VaMartes.Name = "hopeCheckBox_VaMartes";
+            this.hopeCheckBox_VaMartes.Size = new System.Drawing.Size(83, 20);
+            this.hopeCheckBox_VaMartes.TabIndex = 10;
+            this.hopeCheckBox_VaMartes.Text = "Martes";
+            this.hopeCheckBox_VaMartes.UseVisualStyleBackColor = true;
             // 
-            // hopeCheckBox1
+            // hopeCheckBox_VaLunes
             // 
-            this.hopeCheckBox1.AutoSize = true;
-            this.hopeCheckBox1.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox1.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox1.Enable = true;
-            this.hopeCheckBox1.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox1.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox1.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox1.Location = new System.Drawing.Point(12, 78);
-            this.hopeCheckBox1.Name = "hopeCheckBox1";
-            this.hopeCheckBox1.Size = new System.Drawing.Size(76, 20);
-            this.hopeCheckBox1.TabIndex = 9;
-            this.hopeCheckBox1.Text = "Lunes";
-            this.hopeCheckBox1.UseVisualStyleBackColor = true;
+            this.hopeCheckBox_VaLunes.AutoSize = true;
+            this.hopeCheckBox_VaLunes.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaLunes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeCheckBox_VaLunes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.hopeCheckBox_VaLunes.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.hopeCheckBox_VaLunes.Enable = true;
+            this.hopeCheckBox_VaLunes.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hopeCheckBox_VaLunes.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.hopeCheckBox_VaLunes.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.hopeCheckBox_VaLunes.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeCheckBox_VaLunes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeCheckBox_VaLunes.Location = new System.Drawing.Point(12, 78);
+            this.hopeCheckBox_VaLunes.Name = "hopeCheckBox_VaLunes";
+            this.hopeCheckBox_VaLunes.Size = new System.Drawing.Size(76, 20);
+            this.hopeCheckBox_VaLunes.TabIndex = 9;
+            this.hopeCheckBox_VaLunes.Text = "Lunes";
+            this.hopeCheckBox_VaLunes.UseVisualStyleBackColor = true;
             // 
             // hopeTextBox_Telefono
             // 
@@ -440,157 +704,29 @@
             this.hopeTextBox_Nombre.TabStop = false;
             this.hopeTextBox_Nombre.UseSystemPasswordChar = false;
             // 
-            // hopeCheckBox7
+            // panel1
             // 
-            this.hopeCheckBox7.AutoSize = true;
-            this.hopeCheckBox7.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox7.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox7.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox7.Enable = true;
-            this.hopeCheckBox7.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox7.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox7.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox7.Location = new System.Drawing.Point(17, 411);
-            this.hopeCheckBox7.Name = "hopeCheckBox7";
-            this.hopeCheckBox7.Size = new System.Drawing.Size(87, 20);
-            this.hopeCheckBox7.TabIndex = 40;
-            this.hopeCheckBox7.Text = "Sabado";
-            this.hopeCheckBox7.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(798, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 450);
+            this.panel1.TabIndex = 48;
             // 
-            // hopeCheckBox8
+            // panel2
             // 
-            this.hopeCheckBox8.AutoSize = true;
-            this.hopeCheckBox8.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox8.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox8.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox8.Enable = true;
-            this.hopeCheckBox8.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox8.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox8.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox8.Location = new System.Drawing.Point(17, 385);
-            this.hopeCheckBox8.Name = "hopeCheckBox8";
-            this.hopeCheckBox8.Size = new System.Drawing.Size(87, 20);
-            this.hopeCheckBox8.TabIndex = 39;
-            this.hopeCheckBox8.Text = "Viernes";
-            this.hopeCheckBox8.UseVisualStyleBackColor = true;
-            // 
-            // hopeCheckBox9
-            // 
-            this.hopeCheckBox9.AutoSize = true;
-            this.hopeCheckBox9.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox9.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox9.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox9.Enable = true;
-            this.hopeCheckBox9.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox9.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox9.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox9.Location = new System.Drawing.Point(17, 359);
-            this.hopeCheckBox9.Name = "hopeCheckBox9";
-            this.hopeCheckBox9.Size = new System.Drawing.Size(81, 20);
-            this.hopeCheckBox9.TabIndex = 38;
-            this.hopeCheckBox9.Text = "Jueves";
-            this.hopeCheckBox9.UseVisualStyleBackColor = true;
-            // 
-            // hopeCheckBox10
-            // 
-            this.hopeCheckBox10.AutoSize = true;
-            this.hopeCheckBox10.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox10.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox10.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox10.Enable = true;
-            this.hopeCheckBox10.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox10.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox10.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox10.Location = new System.Drawing.Point(17, 333);
-            this.hopeCheckBox10.Name = "hopeCheckBox10";
-            this.hopeCheckBox10.Size = new System.Drawing.Size(102, 20);
-            this.hopeCheckBox10.TabIndex = 37;
-            this.hopeCheckBox10.Text = "Miercoles";
-            this.hopeCheckBox10.UseVisualStyleBackColor = true;
-            // 
-            // hopeCheckBox11
-            // 
-            this.hopeCheckBox11.AutoSize = true;
-            this.hopeCheckBox11.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox11.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox11.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox11.Enable = true;
-            this.hopeCheckBox11.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox11.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox11.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox11.Location = new System.Drawing.Point(17, 307);
-            this.hopeCheckBox11.Name = "hopeCheckBox11";
-            this.hopeCheckBox11.Size = new System.Drawing.Size(83, 20);
-            this.hopeCheckBox11.TabIndex = 36;
-            this.hopeCheckBox11.Text = "Martes";
-            this.hopeCheckBox11.UseVisualStyleBackColor = true;
-            // 
-            // hopeCheckBox12
-            // 
-            this.hopeCheckBox12.AutoSize = true;
-            this.hopeCheckBox12.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.hopeCheckBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeCheckBox12.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeCheckBox12.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeCheckBox12.Enable = true;
-            this.hopeCheckBox12.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeCheckBox12.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.hopeCheckBox12.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeCheckBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox12.Location = new System.Drawing.Point(17, 281);
-            this.hopeCheckBox12.Name = "hopeCheckBox12";
-            this.hopeCheckBox12.Size = new System.Drawing.Size(76, 20);
-            this.hopeCheckBox12.TabIndex = 35;
-            this.hopeCheckBox12.Text = "Lunes";
-            this.hopeCheckBox12.UseVisualStyleBackColor = true;
-            // 
-            // hopeComboBox_EsEnvio
-            // 
-            this.hopeComboBox_EsEnvio.BackColor = System.Drawing.Color.White;
-            this.hopeComboBox_EsEnvio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeComboBox_EsEnvio.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.hopeComboBox_EsEnvio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hopeComboBox_EsEnvio.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeComboBox_EsEnvio.FormattingEnabled = true;
-            this.hopeComboBox_EsEnvio.ItemHeight = 30;
-            this.hopeComboBox_EsEnvio.Location = new System.Drawing.Point(120, 307);
-            this.hopeComboBox_EsEnvio.Name = "hopeComboBox_EsEnvio";
-            this.hopeComboBox_EsEnvio.Size = new System.Drawing.Size(261, 36);
-            this.hopeComboBox_EsEnvio.TabIndex = 33;
-            // 
-            // nightLabel1
-            // 
-            this.nightLabel1.AutoSize = true;
-            this.nightLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nightLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel1.Location = new System.Drawing.Point(366, 228);
-            this.nightLabel1.Name = "nightLabel1";
-            this.nightLabel1.Size = new System.Drawing.Size(36, 15);
-            this.nightLabel1.TabIndex = 41;
-            this.nightLabel1.Text = "Envio";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 450);
+            this.panel2.TabIndex = 50;
             // 
             // AgregarSus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -601,6 +737,8 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.ResumeLayout(false);
             this.airForm1.PerformLayout();
+            this.panel_envio.ResumeLayout(false);
+            this.panel_envio.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -611,12 +749,12 @@
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_Nombre;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_Telefono;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_Direccion;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox5;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox4;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox3;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox2;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox1;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox6;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_VaViernes;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_VaJueves;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_VaMiercoles;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_VaMartes;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_VaLunes;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_VaSabado;
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Buscar;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_NoCome;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_Detalles;
@@ -625,13 +763,20 @@
         private ReaLTaiizor.Controls.NightLabel nightLabel_NoCome;
         private ReaLTaiizor.Controls.HopeComboBox hopeComboBox_Repartidor;
         private ReaLTaiizor.Controls.AirSeparator airSeparator1;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox7;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox8;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox9;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox10;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox11;
-        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox12;
-        private ReaLTaiizor.Controls.NightLabel nightLabel1;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_EvioViernes;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_EvioJueves;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_EvioMartes;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_EvioLunes;
         private ReaLTaiizor.Controls.HopeComboBox hopeComboBox_EsEnvio;
+        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_Horario;
+        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_PrecioEnvio;
+        private System.Windows.Forms.Panel panel_envio;
+        private ReaLTaiizor.Controls.HopeComboBox hopeComboBox_TipoPago;
+        private ReaLTaiizor.Controls.HopeComboBox hopeComboBox_FormaPago;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Cargar;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_EvioSabado;
+        private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox_EvioMiercoles;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

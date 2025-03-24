@@ -30,7 +30,8 @@ namespace RepasSG.Formularios.Listado {
         }
 
         private void parrotButton_Agregar_Click(object sender, EventArgs e) {
-
+            AgregarSus agregarSus = new AgregarSus();
+            agregarSus.ShowDialog();
         }
     }
 }

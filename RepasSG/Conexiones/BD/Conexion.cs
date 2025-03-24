@@ -9,35 +9,44 @@ using System.Threading.Tasks;
 namespace RepasSG.Conexiones.BD {
     internal class Conexion {
         internal class Conectar {
-            private static string pathDB = Path.Combine(AppDomain.CurrentDomain.GetData("DataDirectory").ToString(), "RepasDB.db");
-            private static string cadena = $"Data Source={Path.Combine(AppDomain.CurrentDomain.GetData("DataDirectory").ToString(), "RepasDB.db")};Version=3;";
+            private static string pathDB = Path.Combine(AppDomain.CurrentDomain.GetData("DataDirectory").ToString(), "RepasBD.db");
+            private static string cadena = $"Data Source={Path.Combine(AppDomain.CurrentDomain.GetData("DataDirectory").ToString(), "RepasBD.db")};Version=3;";
 
-            private static string cadenaAppData = $"Data Source={Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Predits", "RepasDB.db")};Version=3;";
-            private static string pathDBAppData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Repas", "RepasDB.db");
-            private static string BackUp = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "BackUpAllResto", "RepasDB.db");
+            private static string cadenaAppData = $"Data Source={Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Repas", "RepasBD.db")};Version=3;";
+            private static string pathDBAppData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Repas", "RepasBD.db");
+            private static string BackUp = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "BackUpAllResto", "RepasBD.db");
 
             public string datos = string.Empty;
 
             public static void Comprobar() {
                 string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Predits");
+
+                // Verificar si la carpeta "Predits" existe, si no, crearla
                 if (!Directory.Exists(folderPath)) {
                     Directory.CreateDirectory(folderPath);
-                    Console.WriteLine("La carpeta no existia, fue creada con exito");
-
+                    Console.WriteLine("La carpeta no existía, fue creada con éxito");
                 }
-                Console.WriteLine("Carpeta encontrada con exito");
+                Console.WriteLine("Carpeta encontrada con éxito");
 
+                string repasFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Repas");
+
+                // Verificar si la carpeta "Repas" existe, si no, crearla
+                if (!Directory.Exists(repasFolderPath)) {
+                    Directory.CreateDirectory(repasFolderPath);
+                    Console.WriteLine("La carpeta 'Repas' no existía, fue creada con éxito");
+                }
+
+                // Verificar si la base de datos existe en la ubicación esperada
                 if (!File.Exists(pathDBAppData)) {
-
                     if (File.Exists(pathDB)) {
                         File.Copy(pathDB, pathDBAppData, true);
+                        Console.WriteLine("Base de datos copiada correctamente a AppData.");
                     } else {
                         Console.WriteLine("El archivo de base de datos original no se encuentra en la ruta especificada.");
                     }
                 }
-
-
             }
+
             public static string CrearBackUp() {
                 try {
                     string backupFolderPath = Path.GetDirectoryName(BackUp);
