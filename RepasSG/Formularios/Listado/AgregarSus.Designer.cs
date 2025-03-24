@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarSus));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.parrotButton_Cargar = new ReaLTaiizor.Controls.ParrotButton();
             this.hopeComboBox_FormaPago = new ReaLTaiizor.Controls.HopeComboBox();
             this.hopeComboBox_TipoPago = new ReaLTaiizor.Controls.HopeComboBox();
@@ -55,8 +57,6 @@
             this.hopeTextBox_Telefono = new ReaLTaiizor.Controls.HopeTextBox();
             this.hopeTextBox_Direccion = new ReaLTaiizor.Controls.HopeTextBox();
             this.hopeTextBox_Nombre = new ReaLTaiizor.Controls.HopeTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.airForm1.SuspendLayout();
             this.panel_envio.SuspendLayout();
             this.SuspendLayout();
@@ -107,6 +107,24 @@
             this.airForm1.Transparent = false;
             this.airForm1.Click += new System.EventHandler(this.airForm1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(2, 450);
+            this.panel2.TabIndex = 50;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(798, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 450);
+            this.panel1.TabIndex = 48;
+            // 
             // parrotButton_Cargar
             // 
             this.parrotButton_Cargar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -144,7 +162,7 @@
             this.hopeComboBox_FormaPago.ItemHeight = 30;
             this.hopeComboBox_FormaPago.Location = new System.Drawing.Point(290, 286);
             this.hopeComboBox_FormaPago.Name = "hopeComboBox_FormaPago";
-            this.hopeComboBox_FormaPago.Size = new System.Drawing.Size(498, 36);
+            this.hopeComboBox_FormaPago.Size = new System.Drawing.Size(479, 36);
             this.hopeComboBox_FormaPago.TabIndex = 46;
             // 
             // hopeComboBox_TipoPago
@@ -158,7 +176,7 @@
             this.hopeComboBox_TipoPago.ItemHeight = 30;
             this.hopeComboBox_TipoPago.Location = new System.Drawing.Point(290, 243);
             this.hopeComboBox_TipoPago.Name = "hopeComboBox_TipoPago";
-            this.hopeComboBox_TipoPago.Size = new System.Drawing.Size(498, 36);
+            this.hopeComboBox_TipoPago.Size = new System.Drawing.Size(479, 36);
             this.hopeComboBox_TipoPago.TabIndex = 45;
             // 
             // panel_envio
@@ -429,6 +447,7 @@
             this.parrotButton_Agregar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.parrotButton_Agregar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.parrotButton_Agregar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Agregar.Click += new System.EventHandler(this.parrotButton_Agregar_Click);
             // 
             // hopeTextBox_NoCome
             // 
@@ -471,7 +490,7 @@
             this.hopeTextBox_Detalles.SelectedText = "";
             this.hopeTextBox_Detalles.SelectionLength = 0;
             this.hopeTextBox_Detalles.SelectionStart = 0;
-            this.hopeTextBox_Detalles.Size = new System.Drawing.Size(472, 36);
+            this.hopeTextBox_Detalles.Size = new System.Drawing.Size(518, 36);
             this.hopeTextBox_Detalles.TabIndex = 28;
             this.hopeTextBox_Detalles.TabStop = false;
             this.hopeTextBox_Detalles.UseSystemPasswordChar = false;
@@ -487,7 +506,7 @@
             this.hopeComboBox_Menu.ItemHeight = 30;
             this.hopeComboBox_Menu.Location = new System.Drawing.Point(251, 88);
             this.hopeComboBox_Menu.Name = "hopeComboBox_Menu";
-            this.hopeComboBox_Menu.Size = new System.Drawing.Size(472, 36);
+            this.hopeComboBox_Menu.Size = new System.Drawing.Size(518, 36);
             this.hopeComboBox_Menu.TabIndex = 27;
             // 
             // parrotButton_Buscar
@@ -703,24 +722,6 @@
             this.hopeTextBox_Nombre.TabIndex = 5;
             this.hopeTextBox_Nombre.TabStop = false;
             this.hopeTextBox_Nombre.UseSystemPasswordChar = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(798, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 450);
-            this.panel1.TabIndex = 48;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 450);
-            this.panel2.TabIndex = 50;
             // 
             // AgregarSus
             // 

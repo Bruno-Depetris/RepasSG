@@ -47,15 +47,15 @@ namespace RepasSG.Formularios.Movimientos {
 
 
         // Rutas de íconos
-        string ErrorPath = Path.Combine(Application.StartupPath, "Img/Iconos", "error.png");
-        string OkPath = Path.Combine(Application.StartupPath, "Img/Iconos", "check.png");
-        string CashPath = Path.Combine(Application.StartupPath, "Img/Iconos", "forex_trade_chart_stock.png");
-        string Admin = Path.Combine(Application.StartupPath, "Img/Iconos", "admin.png");
-        string BaseDatos = Path.Combine(Application.StartupPath, "Img/Iconos", "bd - Copia.png");
-        string Buscar = Path.Combine(Application.StartupPath, "Img/Iconos", "buscar.png");
-        string Edit = Path.Combine(Application.StartupPath, "Img/Iconos", "edit.png");
-        string Delete = Path.Combine(Application.StartupPath, "Img/Iconos", "delete.png");
-        string Zapatillas = Path.Combine(Application.StartupPath, "Img/Iconos", "zapatillas.png");
+        string ErrorPath = Path.Combine(Application.StartupPath, "Imagenes", "error.png");
+        string OkPath = Path.Combine(Application.StartupPath, "Imagenes", "check.png");
+        string CashPath = Path.Combine(Application.StartupPath, "Imagenes", "forex_trade_chart_stock.png");
+        string Admin = Path.Combine(Application.StartupPath, "Imagenes", "admin.png");
+        string BaseDatos = Path.Combine(Application.StartupPath, "Imagenes", "bd - Copia.png");
+        string Buscar = Path.Combine(Application.StartupPath, "Imagenes", "buscar.png");
+        string Edit = Path.Combine(Application.StartupPath, "Imagenes", "edit.png");
+        string Delete = Path.Combine(Application.StartupPath, "Imagenes", "delete.png");
+        string Zapatillas = Path.Combine(Application.StartupPath, "Imagenes", "zapatillas.png");
 
         // Rutas de sonidos
         string popUno = Path.Combine(Application.StartupPath, "Sonidos", "pop-1-269287.wav");

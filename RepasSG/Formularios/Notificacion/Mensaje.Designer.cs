@@ -26,7 +26,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mensaje));
             this.timer_Muestra = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
             this.parrotGradientPanel1 = new ReaLTaiizor.Controls.ParrotGradientPanel();
             this.label_Mensaje = new System.Windows.Forms.Label();
@@ -154,7 +153,6 @@
         #endregion
 
         private System.Windows.Forms.Timer timer_Muestra;
-        private System.Windows.Forms.Timer timer1;
         private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
         private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
         private System.Windows.Forms.Label label_Mensaje;
