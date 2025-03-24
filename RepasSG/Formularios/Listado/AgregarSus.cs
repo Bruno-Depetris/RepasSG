@@ -61,9 +61,6 @@ namespace RepasSG.Formularios.Listado {
         }
 
 
-        private void airForm1_Click(object sender, EventArgs e) {
-
-        }
 
         private bool ValidacionCliente() {
             Mensaje msj = new Mensaje();
@@ -85,11 +82,11 @@ namespace RepasSG.Formularios.Listado {
 
         private void LogicaEnvioRetiro() {
             if (hopeCheckBox_VaLunes.Checked == true && hopeCheckBox_EvioLunes.Checked == false) {
-                diasVa = "Lunes ";
+                diasVa += "Lunes ";
 
             } else if (hopeCheckBox_VaLunes.Checked == true && hopeCheckBox_EvioLunes.Checked == true) {
-                diasVa = "Lunes ";
-                diasEnvio = "Lunes ";
+                diasVa += "Lunes ";
+                diasEnvio += "Lunes ";
             }
             if (hopeCheckBox_VaMartes.Checked == true && hopeCheckBox_EvioMartes.Checked == false) {
                 diasVa += "- Martes ";
@@ -99,42 +96,42 @@ namespace RepasSG.Formularios.Listado {
                 diasEnvio += "- Martes ";
             }
             if (hopeCheckBox_VaMiercoles.Checked == true && hopeCheckBox_EvioMiercoles.Checked == false) {
-                diasVa = "- Miercoles ";
+                diasVa += "- Miercoles ";
 
             } else if (hopeCheckBox_VaMiercoles.Checked == true && hopeCheckBox_EvioMiercoles.Checked == true) {
-                diasVa = "- Miercoles";
-                diasEnvio = "- Miercoles";
+                diasVa += "- Miercoles";
+                diasEnvio += "- Miercoles";
             }
             if (hopeCheckBox_VaJueves.Checked == true && hopeCheckBox_EvioJueves.Checked == false) {
-                diasVa = " - Jueves ";
+                diasVa += " - Jueves ";
 
             } else if (hopeCheckBox_VaJueves.Checked == true && hopeCheckBox_EvioJueves.Checked == true) {
-                diasVa = " - Jueves ";
-                diasEnvio = " - Jueves ";
+                diasVa += " - Jueves ";
+                diasEnvio += " - Jueves ";
             }
             if (hopeCheckBox_VaViernes.Checked == true && hopeCheckBox_EvioViernes.Checked == false) {
-                diasVa = " - Viernes ";
+                diasVa += " - Viernes ";
 
             } else if (hopeCheckBox_VaViernes.Checked == true && hopeCheckBox_EvioViernes.Checked == true) {
-                diasVa = " - Viernes ";
-                diasEnvio = " - Viernes ";
+                diasVa += " - Viernes ";
+                diasEnvio += " - Viernes ";
             }
             if (hopeCheckBox_VaSabado.Checked == true && hopeCheckBox_EvioSabado.Checked == false) {
-                diasVa = " - Sabado ";
+                diasVa += " - Sabado ";
 
             } else if (hopeCheckBox_VaSabado.Checked == true && hopeCheckBox_EvioSabado.Checked == true) {
-                diasVa = " - Sabado ";
-                diasEnvio = " - Sabado ";
+                diasVa += " - Sabado ";
+                diasEnvio += " - Sabado ";
             }
         }
 
         private void hopeCheckBox_EvioLunes_CheckedChanged(object sender, EventArgs e) {
             if(hopeCheckBox_VaLunes.Checked == true && hopeCheckBox_EvioLunes.Checked == false) {
-                diasVa = "Lunes ";
+                diasVa += "Lunes ";
                 
             }else if (hopeCheckBox_VaLunes.Checked == true && hopeCheckBox_EvioLunes.Checked == true) {
-                diasVa = "Lunes ";
-                diasEnvio = "Lunes ";
+                diasVa += "Lunes ";
+                diasEnvio += "Lunes ";
             }
             
         }
@@ -151,52 +148,77 @@ namespace RepasSG.Formularios.Listado {
 
         private void hopeCheckBox_EvioMiercoles_CheckedChanged(object sender, EventArgs e) {
             if (hopeCheckBox_VaMiercoles.Checked == true && hopeCheckBox_EvioMiercoles.Checked == false) {
-                diasVa = "- Miercoles ";
+                diasVa += "- Miercoles ";
 
             } else if (hopeCheckBox_VaMiercoles.Checked == true && hopeCheckBox_EvioMiercoles.Checked == true) {
-                diasVa = "- Miercoles";
-                diasEnvio = "- Miercoles";
+                diasVa += "- Miercoles";
+                diasEnvio += "- Miercoles";
             }
         }
 
         private void hopeCheckBox_EvioJueves_CheckedChanged(object sender, EventArgs e) {
             if (hopeCheckBox_VaJueves.Checked == true && hopeCheckBox_EvioJueves.Checked == false) {
-                diasVa = " - Jueves ";
+                diasVa += " - Jueves ";
 
             } else if (hopeCheckBox_VaJueves.Checked == true && hopeCheckBox_EvioJueves.Checked == true) {
-                diasVa = " - Jueves ";
-                diasEnvio = " - Jueves ";
+                diasVa += " - Jueves ";
+                diasEnvio += " - Jueves ";
             }
         }
 
         private void hopeCheckBox_EvioViernes_CheckedChanged(object sender, EventArgs e) {
             if (hopeCheckBox_VaViernes.Checked == true && hopeCheckBox_EvioViernes.Checked == false) {
-                diasVa = " - Viernes ";
+                diasVa += " - Viernes ";
 
             } else if (hopeCheckBox_VaViernes.Checked == true && hopeCheckBox_EvioViernes.Checked == true) {
-                diasVa = " - Viernes ";
-                diasEnvio = " - Viernes ";
+                diasVa += " - Viernes ";
+                diasEnvio += " - Viernes ";
             }
         }
 
         private void hopeCheckBox_EvioSabado_CheckedChanged(object sender, EventArgs e) {
             if (hopeCheckBox_VaSabado.Checked == true && hopeCheckBox_EvioSabado.Checked == false) {
-                diasVa = " - Sabado ";
+                diasVa += " - Sabado ";
 
             } else if (hopeCheckBox_VaSabado.Checked == true && hopeCheckBox_EvioSabado.Checked == true) {
-                diasVa = " - Sabado ";
-                diasEnvio = " - Sabado ";
+                diasVa += " - Sabado ";
+                diasEnvio += " - Sabado ";
             }
         }
 
         private void parrotButton_Agregar_Click(object sender, EventArgs e) {
             Mensaje msj = new Mensaje();
-            if (string.IsNullOrEmpty(hopeTextBox_NoCome.Text)) {
-                msj.Show("Error","que no come?",Color.White,Color.Red,Mensaje.TipoIcono.Error,Mensaje.TipoSonido.Intermedio);
+            if (string.IsNullOrEmpty(hopeTextBox_NoCome.Text) || hopeTextBox_NoCome.Text == "No Come") {
+                msj.Show("Error","que no come?",Color.Red,Color.White,Mensaje.TipoIcono.Error,Mensaje.TipoSonido.Intermedio);
                 hopeTextBox_NoCome.Focus();
+                return;
             }
 
-            msj.Show("Cargado", "comida cargada", Color.White, Color.Green, Mensaje.TipoIcono.Ok, Mensaje.TipoSonido.simple);
+            msj.Show("Cargado", "comida cargada", Color.Green, Color.White, Mensaje.TipoIcono.Ok, Mensaje.TipoSonido.simple);
+
+            if (nightLabel_NoCome.Text == "Come Todo") {
+                nightLabel_NoCome.Text = string.Empty;
+            } 
+
+            nightLabel_NoCome.Text += $"{hopeTextBox_NoCome.Text} ";
+            nightLabel_NoCome.ForeColor = Color.White;
+            hopeTextBox_NoCome.Focus();
+            hopeTextBox_NoCome.Clear();
+        }
+
+        private void AgregarSus_Load(object sender, EventArgs e) {
+
+
+        }
+
+        private void parrotButton_Cargar_Click(object sender, EventArgs e) {
+            if (hopeComboBox_EsEnvio.SelectedIndex != 0) {
+                LogicaEnvioRetiro();
+            } else if (hopeComboBox_EsEnvio.SelectedIndex == 0) {
+                diasEnvio = "Retira";
+            }
+            
+            Console.WriteLine($"va:{diasVa} \n envio:{diasEnvio}");
         }
     }
 }

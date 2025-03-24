@@ -38,6 +38,7 @@
             // 
             this.timer_Muestra.Enabled = true;
             this.timer_Muestra.Interval = 1;
+            this.timer_Muestra.Tick += new System.EventHandler(this.timer_Muestra_Tick);
             // 
             // parrotPictureBox1
             // 
@@ -145,6 +146,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Mensaje";
+            this.Load += new System.EventHandler(this.Mensaje_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

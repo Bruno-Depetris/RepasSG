@@ -33,7 +33,7 @@
             this.ClientSize = new System.Drawing.Size(807, 565);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevaCompra";
-            this.Text = "NuevaCompra";
+            this.Text = " ";
             this.ResumeLayout(false);
 
         }

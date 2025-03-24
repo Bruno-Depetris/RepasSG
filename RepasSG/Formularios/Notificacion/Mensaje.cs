@@ -156,9 +156,7 @@ namespace RepasSG.Formularios.Movimientos {
             }
         }
 
-        private void Mensaje_Load(object sender, EventArgs e) {
-            position();
-        }
+
 
         private void timer_Muestra_Tick(object sender, EventArgs e) {
             if (estado == false) {
@@ -195,6 +193,9 @@ namespace RepasSG.Formularios.Movimientos {
             this.Location = new Point(posicionX, posicionY);
         }
 
+        private void Mensaje_Load(object sender, EventArgs e) {
+            position();
+        }
 
         private void position() {
 

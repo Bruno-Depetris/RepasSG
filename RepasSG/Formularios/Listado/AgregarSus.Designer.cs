@@ -105,7 +105,6 @@
             this.airForm1.Text = "Suscripcion";
             this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.airForm1.Transparent = false;
-            this.airForm1.Click += new System.EventHandler(this.airForm1_Click);
             // 
             // panel2
             // 
@@ -150,6 +149,7 @@
             this.parrotButton_Cargar.TextColor = System.Drawing.Color.Black;
             this.parrotButton_Cargar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotButton_Cargar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Cargar.Click += new System.EventHandler(this.parrotButton_Cargar_Click);
             // 
             // hopeComboBox_FormaPago
             // 
@@ -736,6 +736,7 @@
             this.ShowIcon = false;
             this.Text = "AgregarSus";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.AgregarSus_Load);
             this.airForm1.ResumeLayout(false);
             this.airForm1.PerformLayout();
             this.panel_envio.ResumeLayout(false);
