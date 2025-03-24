@@ -44,19 +44,17 @@
             this.Column_PrecioDiario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Acumulado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Accion = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.airSeparator1 = new ReaLTaiizor.Controls.AirSeparator();
-            this.parrotButton_CargarNuevo = new ReaLTaiizor.Controls.ParrotButton();
-            this.parrotGradientPanel1 = new ReaLTaiizor.Controls.ParrotGradientPanel();
             this.hopeComboBox_Dias = new ReaLTaiizor.Controls.HopeComboBox();
             this.hopeTextBox_Texto = new ReaLTaiizor.Controls.HopeTextBox();
-            this.airSeparator2 = new ReaLTaiizor.Controls.AirSeparator();
-            this.parrotButton_Imprimir = new ReaLTaiizor.Controls.ParrotButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.parrotButton_Eliminar = new ReaLTaiizor.Controls.ParrotButton();
             this.parrotButton_Editar = new ReaLTaiizor.Controls.ParrotButton();
-            this.parrotButton_Borrar = new ReaLTaiizor.Controls.ParrotButton();
+            this.parrotButton_Imprimir = new ReaLTaiizor.Controls.ParrotButton();
+            this.parrotButton_Novedades = new ReaLTaiizor.Controls.ParrotButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.parrotButton_Agregar = new ReaLTaiizor.Controls.ParrotButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,13 +65,13 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(12, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(693, 488);
+            this.panel1.Size = new System.Drawing.Size(892, 553);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
@@ -103,10 +101,11 @@
             this.Column_Acumulado,
             this.Column_Accion});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 488);
+            this.dataGridView1.Size = new System.Drawing.Size(892, 553);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column_ClienteID
@@ -211,88 +210,16 @@
             this.Column_Accion.HeaderText = "Accion";
             this.Column_Accion.Name = "Column_Accion";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel2.Controls.Add(this.parrotButton_Borrar);
-            this.panel2.Controls.Add(this.parrotButton_Editar);
-            this.panel2.Controls.Add(this.parrotButton_Imprimir);
-            this.panel2.Controls.Add(this.airSeparator2);
-            this.panel2.Controls.Add(this.airSeparator1);
-            this.panel2.Controls.Add(this.parrotButton_CargarNuevo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(723, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(84, 565);
-            this.panel2.TabIndex = 1;
-            // 
-            // airSeparator1
-            // 
-            this.airSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
-            this.airSeparator1.Colors = new ReaLTaiizor.Util.BloomAir[0];
-            this.airSeparator1.Customization = "";
-            this.airSeparator1.Font = new System.Drawing.Font("Verdana", 8F);
-            this.airSeparator1.Image = null;
-            this.airSeparator1.Location = new System.Drawing.Point(12, 86);
-            this.airSeparator1.Name = "airSeparator1";
-            this.airSeparator1.NoRounding = false;
-            this.airSeparator1.Size = new System.Drawing.Size(60, 1);
-            this.airSeparator1.TabIndex = 8;
-            this.airSeparator1.Text = "airSeparator1";
-            this.airSeparator1.Transparent = false;
-            // 
-            // parrotButton_CargarNuevo
-            // 
-            this.parrotButton_CargarNuevo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_CargarNuevo.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_CargarNuevo.ButtonImage")));
-            this.parrotButton_CargarNuevo.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.parrotButton_CargarNuevo.ButtonText = "";
-            this.parrotButton_CargarNuevo.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_CargarNuevo.ClickTextColor = System.Drawing.Color.White;
-            this.parrotButton_CargarNuevo.CornerRadius = 5;
-            this.parrotButton_CargarNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.parrotButton_CargarNuevo.Font = new System.Drawing.Font("Arboria Book", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parrotButton_CargarNuevo.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.parrotButton_CargarNuevo.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_CargarNuevo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
-            this.parrotButton_CargarNuevo.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.parrotButton_CargarNuevo.Location = new System.Drawing.Point(12, 22);
-            this.parrotButton_CargarNuevo.Name = "parrotButton_CargarNuevo";
-            this.parrotButton_CargarNuevo.Size = new System.Drawing.Size(60, 58);
-            this.parrotButton_CargarNuevo.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.parrotButton_CargarNuevo.TabIndex = 7;
-            this.parrotButton_CargarNuevo.TextColor = System.Drawing.Color.White;
-            this.parrotButton_CargarNuevo.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotButton_CargarNuevo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // parrotGradientPanel1
-            // 
-            this.parrotGradientPanel1.BottomLeft = System.Drawing.Color.Black;
-            this.parrotGradientPanel1.BottomRight = System.Drawing.Color.Fuchsia;
-            this.parrotGradientPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-            this.parrotGradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.parrotGradientPanel1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-            this.parrotGradientPanel1.Location = new System.Drawing.Point(711, 0);
-            this.parrotGradientPanel1.Name = "parrotGradientPanel1";
-            this.parrotGradientPanel1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.parrotGradientPanel1.PrimerColor = System.Drawing.Color.White;
-            this.parrotGradientPanel1.Size = new System.Drawing.Size(12, 565);
-            this.parrotGradientPanel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.parrotGradientPanel1.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Vertical;
-            this.parrotGradientPanel1.TabIndex = 2;
-            this.parrotGradientPanel1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotGradientPanel1.TopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.parrotGradientPanel1.TopRight = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            // 
             // hopeComboBox_Dias
             // 
+            this.hopeComboBox_Dias.BackColor = System.Drawing.Color.White;
             this.hopeComboBox_Dias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hopeComboBox_Dias.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.hopeComboBox_Dias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hopeComboBox_Dias.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeComboBox_Dias.FormattingEnabled = true;
             this.hopeComboBox_Dias.ItemHeight = 30;
-            this.hopeComboBox_Dias.Location = new System.Drawing.Point(12, 23);
+            this.hopeComboBox_Dias.Location = new System.Drawing.Point(12, 12);
             this.hopeComboBox_Dias.Name = "hopeComboBox_Dias";
             this.hopeComboBox_Dias.Size = new System.Drawing.Size(248, 36);
             this.hopeComboBox_Dias.TabIndex = 1;
@@ -300,13 +227,13 @@
             // hopeTextBox_Texto
             // 
             this.hopeTextBox_Texto.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox_Texto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox_Texto.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox_Texto.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeTextBox_Texto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.hopeTextBox_Texto.BorderColorA = System.Drawing.Color.White;
+            this.hopeTextBox_Texto.BorderColorB = System.Drawing.Color.White;
             this.hopeTextBox_Texto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hopeTextBox_Texto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox_Texto.Hint = "";
-            this.hopeTextBox_Texto.Location = new System.Drawing.Point(266, 23);
+            this.hopeTextBox_Texto.Hint = "Buscar";
+            this.hopeTextBox_Texto.Location = new System.Drawing.Point(266, 12);
             this.hopeTextBox_Texto.MaxLength = 32767;
             this.hopeTextBox_Texto.Multiline = false;
             this.hopeTextBox_Texto.Name = "hopeTextBox_Texto";
@@ -315,119 +242,173 @@
             this.hopeTextBox_Texto.SelectedText = "";
             this.hopeTextBox_Texto.SelectionLength = 0;
             this.hopeTextBox_Texto.SelectionStart = 0;
-            this.hopeTextBox_Texto.Size = new System.Drawing.Size(237, 36);
-            this.hopeTextBox_Texto.TabIndex = 3;
+            this.hopeTextBox_Texto.Size = new System.Drawing.Size(286, 36);
+            this.hopeTextBox_Texto.TabIndex = 4;
             this.hopeTextBox_Texto.TabStop = false;
             this.hopeTextBox_Texto.UseSystemPasswordChar = false;
             // 
-            // airSeparator2
+            // panel2
             // 
-            this.airSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.airSeparator2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
-            this.airSeparator2.Colors = new ReaLTaiizor.Util.BloomAir[0];
-            this.airSeparator2.Customization = "";
-            this.airSeparator2.Font = new System.Drawing.Font("Verdana", 8F);
-            this.airSeparator2.Image = null;
-            this.airSeparator2.Location = new System.Drawing.Point(12, 364);
-            this.airSeparator2.Name = "airSeparator2";
-            this.airSeparator2.NoRounding = false;
-            this.airSeparator2.Size = new System.Drawing.Size(60, 1);
-            this.airSeparator2.TabIndex = 9;
-            this.airSeparator2.Text = "airSeparator2";
-            this.airSeparator2.Transparent = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel2.Location = new System.Drawing.Point(558, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 36);
+            this.panel2.TabIndex = 5;
             // 
-            // parrotButton_Imprimir
+            // parrotButton_Eliminar
             // 
-            this.parrotButton_Imprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.parrotButton_Imprimir.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Imprimir.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Imprimir.ButtonImage")));
-            this.parrotButton_Imprimir.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.parrotButton_Imprimir.ButtonText = "";
-            this.parrotButton_Imprimir.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Imprimir.ClickTextColor = System.Drawing.Color.White;
-            this.parrotButton_Imprimir.CornerRadius = 5;
-            this.parrotButton_Imprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.parrotButton_Imprimir.Font = new System.Drawing.Font("Arboria Book", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parrotButton_Imprimir.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.parrotButton_Imprimir.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Imprimir.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
-            this.parrotButton_Imprimir.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.parrotButton_Imprimir.Location = new System.Drawing.Point(12, 371);
-            this.parrotButton_Imprimir.Name = "parrotButton_Imprimir";
-            this.parrotButton_Imprimir.Size = new System.Drawing.Size(60, 58);
-            this.parrotButton_Imprimir.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.parrotButton_Imprimir.TabIndex = 10;
-            this.parrotButton_Imprimir.TextColor = System.Drawing.Color.White;
-            this.parrotButton_Imprimir.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotButton_Imprimir.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Eliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.parrotButton_Eliminar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Eliminar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Eliminar.ButtonImage")));
+            this.parrotButton_Eliminar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Eliminar.ButtonText = "";
+            this.parrotButton_Eliminar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Eliminar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.parrotButton_Eliminar.CornerRadius = 5;
+            this.parrotButton_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Eliminar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton_Eliminar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Eliminar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Eliminar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
+            this.parrotButton_Eliminar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Eliminar.Location = new System.Drawing.Point(864, 12);
+            this.parrotButton_Eliminar.Name = "parrotButton_Eliminar";
+            this.parrotButton_Eliminar.Size = new System.Drawing.Size(40, 39);
+            this.parrotButton_Eliminar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Eliminar.TabIndex = 23;
+            this.parrotButton_Eliminar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.parrotButton_Eliminar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.parrotButton_Eliminar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // parrotButton_Editar
             // 
-            this.parrotButton_Editar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.parrotButton_Editar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.parrotButton_Editar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.parrotButton_Editar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Editar.ButtonImage")));
-            this.parrotButton_Editar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.parrotButton_Editar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
             this.parrotButton_Editar.ButtonText = "";
             this.parrotButton_Editar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Editar.ClickTextColor = System.Drawing.Color.White;
+            this.parrotButton_Editar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.parrotButton_Editar.CornerRadius = 5;
             this.parrotButton_Editar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.parrotButton_Editar.Font = new System.Drawing.Font("Arboria Book", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton_Editar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parrotButton_Editar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.parrotButton_Editar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.parrotButton_Editar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
             this.parrotButton_Editar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.parrotButton_Editar.Location = new System.Drawing.Point(12, 435);
+            this.parrotButton_Editar.Location = new System.Drawing.Point(772, 12);
             this.parrotButton_Editar.Name = "parrotButton_Editar";
-            this.parrotButton_Editar.Size = new System.Drawing.Size(60, 58);
+            this.parrotButton_Editar.Size = new System.Drawing.Size(40, 39);
             this.parrotButton_Editar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.parrotButton_Editar.TabIndex = 11;
-            this.parrotButton_Editar.TextColor = System.Drawing.Color.White;
-            this.parrotButton_Editar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton_Editar.TabIndex = 24;
+            this.parrotButton_Editar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.parrotButton_Editar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.parrotButton_Editar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // parrotButton_Borrar
+            // parrotButton_Imprimir
             // 
-            this.parrotButton_Borrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.parrotButton_Borrar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Borrar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Borrar.ButtonImage")));
-            this.parrotButton_Borrar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.parrotButton_Borrar.ButtonText = "";
-            this.parrotButton_Borrar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Borrar.ClickTextColor = System.Drawing.Color.White;
-            this.parrotButton_Borrar.CornerRadius = 5;
-            this.parrotButton_Borrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.parrotButton_Borrar.Font = new System.Drawing.Font("Arboria Book", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parrotButton_Borrar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.parrotButton_Borrar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.parrotButton_Borrar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
-            this.parrotButton_Borrar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.parrotButton_Borrar.Location = new System.Drawing.Point(12, 499);
-            this.parrotButton_Borrar.Name = "parrotButton_Borrar";
-            this.parrotButton_Borrar.Size = new System.Drawing.Size(60, 58);
-            this.parrotButton_Borrar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.parrotButton_Borrar.TabIndex = 12;
-            this.parrotButton_Borrar.TextColor = System.Drawing.Color.White;
-            this.parrotButton_Borrar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotButton_Borrar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Imprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.parrotButton_Imprimir.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Imprimir.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Imprimir.ButtonImage")));
+            this.parrotButton_Imprimir.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Imprimir.ButtonText = "";
+            this.parrotButton_Imprimir.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Imprimir.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.parrotButton_Imprimir.CornerRadius = 5;
+            this.parrotButton_Imprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Imprimir.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton_Imprimir.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Imprimir.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Imprimir.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
+            this.parrotButton_Imprimir.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Imprimir.Location = new System.Drawing.Point(726, 12);
+            this.parrotButton_Imprimir.Name = "parrotButton_Imprimir";
+            this.parrotButton_Imprimir.Size = new System.Drawing.Size(40, 39);
+            this.parrotButton_Imprimir.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Imprimir.TabIndex = 25;
+            this.parrotButton_Imprimir.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.parrotButton_Imprimir.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.parrotButton_Imprimir.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // parrotButton_Novedades
+            // 
+            this.parrotButton_Novedades.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.parrotButton_Novedades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Novedades.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Novedades.ButtonImage")));
+            this.parrotButton_Novedades.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Novedades.ButtonText = "";
+            this.parrotButton_Novedades.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Novedades.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.parrotButton_Novedades.CornerRadius = 5;
+            this.parrotButton_Novedades.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Novedades.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton_Novedades.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Novedades.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Novedades.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
+            this.parrotButton_Novedades.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Novedades.Location = new System.Drawing.Point(818, 12);
+            this.parrotButton_Novedades.Name = "parrotButton_Novedades";
+            this.parrotButton_Novedades.Size = new System.Drawing.Size(40, 39);
+            this.parrotButton_Novedades.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Novedades.TabIndex = 26;
+            this.parrotButton_Novedades.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.parrotButton_Novedades.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.parrotButton_Novedades.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel3.Location = new System.Drawing.Point(719, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1, 36);
+            this.panel3.TabIndex = 6;
+            // 
+            // parrotButton_Agregar
+            // 
+            this.parrotButton_Agregar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Agregar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Agregar.ButtonImage")));
+            this.parrotButton_Agregar.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Agregar.ButtonText = "";
+            this.parrotButton_Agregar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Agregar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.parrotButton_Agregar.CornerRadius = 5;
+            this.parrotButton_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Agregar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parrotButton_Agregar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Agregar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.parrotButton_Agregar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(115)))), ((int)(((byte)(27)))));
+            this.parrotButton_Agregar.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Agregar.Location = new System.Drawing.Point(565, 12);
+            this.parrotButton_Agregar.Name = "parrotButton_Agregar";
+            this.parrotButton_Agregar.Size = new System.Drawing.Size(40, 39);
+            this.parrotButton_Agregar.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Agregar.TabIndex = 28;
+            this.parrotButton_Agregar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.parrotButton_Agregar.TextRenderingType = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.parrotButton_Agregar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Agregar.Click += new System.EventHandler(this.parrotButton_Agregar_Click);
             // 
             // ListadoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(807, 565);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.ClientSize = new System.Drawing.Size(916, 630);
+            this.Controls.Add(this.parrotButton_Agregar);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.parrotButton_Novedades);
+            this.Controls.Add(this.parrotButton_Imprimir);
+            this.Controls.Add(this.parrotButton_Editar);
+            this.Controls.Add(this.parrotButton_Eliminar);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.hopeTextBox_Texto);
             this.Controls.Add(this.hopeComboBox_Dias);
-            this.Controls.Add(this.parrotGradientPanel1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListadoForm";
             this.Text = "ListadoForm";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -436,8 +417,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
-        private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_ClienteID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_SuscripcionID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_RepartidorID;
@@ -455,13 +434,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_PrecioDiario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Acumulado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column_Accion;
-        private ReaLTaiizor.Controls.AirSeparator airSeparator1;
-        private ReaLTaiizor.Controls.ParrotButton parrotButton_CargarNuevo;
         private ReaLTaiizor.Controls.HopeComboBox hopeComboBox_Dias;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox_Texto;
-        private ReaLTaiizor.Controls.ParrotButton parrotButton_Borrar;
+        private System.Windows.Forms.Panel panel2;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Eliminar;
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Editar;
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Imprimir;
-        private ReaLTaiizor.Controls.AirSeparator airSeparator2;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Novedades;
+        private System.Windows.Forms.Panel panel3;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Agregar;
     }
 }

@@ -77,6 +77,12 @@
     <Compile Include="Formularios\Config\ConfigForm.Designer.cs">
       <DependentUpon>ConfigForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Listado\AgregarSus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listado\AgregarSus.Designer.cs">
+      <DependentUpon>AgregarSus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Notificacion\Mensaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Config\ConfigForm.resx">
       <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listado\AgregarSus.resx">
+      <DependentUpon>AgregarSus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Notificacion\Mensaje.resx">
       <DependentUpon>Mensaje.cs</DependentUpon>
